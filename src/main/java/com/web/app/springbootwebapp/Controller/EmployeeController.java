@@ -21,4 +21,12 @@ public class EmployeeController {
         modelAndView.addObject("employees", empList);
         return modelAndView;
     }
+
+    @GetMapping
+    public ModelAndView addEmployee(){
+        ModelAndView modelAndView = new ModelAndView("add-employee-form");
+        Employee employee = new Employee();
+        modelAndView.addObject("employee", employee);
+        return modelAndView;
+    }
 }
