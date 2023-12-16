@@ -1,6 +1,6 @@
 package com.web.app.springbootwebapp.Controller;
 
-import com.web.app.springbootwebapp.Entity.Employee;
+import com.web.app.springbootwebapp.Model.Employee;
 import com.web.app.springbootwebapp.repository.EmployeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

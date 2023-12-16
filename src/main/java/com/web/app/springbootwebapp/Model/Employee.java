@@ -1,4 +1,4 @@
-package com.web.app.springbootwebapp.Entity;
+package com.web.app.springbootwebapp.Model;
 
 import jakarta.persistence.*;
 
