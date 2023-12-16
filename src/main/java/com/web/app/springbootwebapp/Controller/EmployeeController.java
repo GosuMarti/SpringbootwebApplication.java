@@ -47,6 +47,7 @@ public class EmployeeController {
         return modelAndView;
     }
 
+    @GetMapping("/deleteEmployee")
     public String deleteEmployee(@RequestParam Long employeeId){
         employeeRepository.deleteById(employeeId);
         return "redirect:/showEmployees";
