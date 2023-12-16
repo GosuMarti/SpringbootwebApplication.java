@@ -22,8 +22,8 @@ public class EmployeeController {
         return modelAndView;
     }
 
-    @GetMapping
-    public ModelAndView addEmployee(){
+    @GetMapping("/addEmployeeForm")
+    public ModelAndView addEmployeeForm(){
         ModelAndView modelAndView = new ModelAndView("add-employee-form");
         Employee employee = new Employee();
         modelAndView.addObject("employee", employee);
