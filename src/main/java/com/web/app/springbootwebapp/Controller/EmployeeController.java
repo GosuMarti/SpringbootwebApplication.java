@@ -45,7 +45,10 @@ public class EmployeeController {
         Employee employee = employeeRepository.findById(employeeId).get();
         modelAndView.addObject("employee", employee);
         return modelAndView;
+    }
 
-
+    public String deleteEmployee(@RequestParam Long employeeId){
+        employeeRepository.deleteById(employeeId);
+        return "redirect:/showEmployees";
     }
 }
